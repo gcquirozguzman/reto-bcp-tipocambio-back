@@ -1,0 +1,9 @@
+docker ps -a
+docker images
+
+docker build -f DockerFile -t proyecto-tipo-cambio-docker .
+docker run -p 8080:8080 proyecto-tipo-cambio-docker
+
+Angular
+ng new proyecto-tipo-cambio
+ng serve --open
